@@ -1,0 +1,92 @@
+
+<!-- This Site Helps In Booking Travelling Car For Your Family -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Travel Desk</title>
+</head>
+
+<body>
+    <!-- Success alert when form is submitted -->
+    <div id = "success"class="alert alert-success alert-dismissible fade " role="alert">
+        <strong>Success</strong> Your form has been submitted successfully.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <!-- Failure alert when some error occures -->
+    <div id="failed" class="alert alert-danger alert-dismissible fade" role="alert">
+        <strong>Error!</strong> Your travel request has not been sent due to errors. Try agian!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="container" style="margin:40px; margin-left:60px; background-color: antiquewhite;">
+        <h1>Travel Desk</h1>
+        <div class="mb-3 form-group">
+            <label for="exampleFormControlInput1" class="form-label">UserName</label>
+            <input type="text" class="form-control" id="Name" placeholder="Enter your name">
+            <small id="namevalid" class="form-text text-muted invalid-feedback">
+                <font style="color: crimson;">Your username must be 2-10 characters long and should not start with a
+                    number</font>
+            </small>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="exampleFormControlInput1" class="form-label">Email-Id</label>
+            <input type="email" class="form-control" id="Email" placeholder="Enter your Email-Id">
+        </div>
+        <div class="form-group mb-3">
+            <label for="address" class="form-label">Phone Number</label>
+            <input class="form-control" name="phone" id="phone" placeholder="Enter your phone number">
+            <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                <font style="color: crimson;">
+                    Your phone number must be 10 digit long
+                </font>
+            </small>
+        </div>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Select The Car</option>
+            <option value="1">Maruti 800</option>
+            <option value="2">Santro </option>
+            <option value="3">Etios Toyota</option>
+            <option value="4">xuv</option>
+        </select>
+        <div class="mb-3 form-group">
+            <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+            <textarea class="form-control" id="Address" rows="3"></textarea>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="exampleFormControlTextarea1" class="form-label">Any Other Message</label>
+            <textarea class="form-control" id="Msg" rows="3"></textarea>
+        </div>
+        <button id="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script> -->
+    <script src="Desk.js"></script>
+
+</body>
+
+</html>
